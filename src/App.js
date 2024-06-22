@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'typeface-poppins';
+import ProfileBox from './components/Profile';
+import Navbar from './components/Navbar';
+import Intro from './components/Content';
+import Projects from './components/Projects';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div id='profile'>
+      <ProfileBox />
+      </div>
+      <Navbar />
+      <div id="home">
+        <Intro />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="aboutme">
+        <AboutMe />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+
