@@ -12,7 +12,7 @@ import nodejs from '../images/nodejs.png';
 const AboutMe = () => {
   return (
     <div className='aboutme'>
-        <p className="heading" data-aos="fade-up" data-aos-duration="2000">~AoutMe~</p>
+        {/* <p className="heading" data-aos="fade-up" data-aos-duration="2000">~AoutMe~</p> */}
         <div className='aboutme-sentence' data-aos="fade-up" data-aos-duration="2000">
         <p className="aboutme-text">Crafting Elegance From Complexity With Seamless Design Solutions</p>
         </div>

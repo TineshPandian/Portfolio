@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='contact' >
-      <p className="heading"  data-aos="fade-up" data-aos-duration="2000">~Contact~</p>
+      {/* <p className="heading"  data-aos="fade-up" data-aos-duration="2000">~Contact~</p> */}
         <div className='aboutme-sentence' data-aos="fade-up" data-aos-duration="2000">
         <p className="aboutme-text">Ready to Transform Your Vision into Reality? Contact Me Now!</p>
         </div>

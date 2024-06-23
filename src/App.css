@@ -63,7 +63,7 @@ body{
   justify-content: left;
   width: 90%;
   max-width: 400px;
-  margin: 3% auto;
+  margin: 1.5% auto;
   height: 650px;
   border: 1px solid var(--border);
   border-radius: 40px;
@@ -151,7 +151,7 @@ body{
   margin: 0 470px;
   margin-top: 50px;
   height: 80px;
-  width: 90%;
+  width: 80%;
   max-width: 925px;
   position: fixed;
   z-index: 1;
@@ -245,15 +245,15 @@ body{
   display: none;
   justify-content: space-around;
   align-items: center; 
-  position: fixed;
+  position:fixed;
   border-radius: 30px;
   margin-left: 18px;
   text-align: center;
   backdrop-filter: blur(5px);
-  width: 78%;
+  width: 83%;
   padding: 15px;
   z-index: 999;
-  margin-top: 60px;
+  
 }
 .chat a{
   text-decoration: none;
@@ -280,7 +280,7 @@ body{
   font-size: 4em;
   word-spacing: 5px;
   letter-spacing: 2px;
-  margin-left: 230px;
+  margin-left: 300px;
   background: var(--bg-color);;
   background-clip: text;
   color: transparent;
@@ -299,7 +299,7 @@ body{
 .download {
   text-align: center;
   margin-top: 30px;
-  margin-right: 250px;
+  margin-right: 150px;
 }
 
 .cv-btn {
@@ -346,7 +346,7 @@ body{
   font-weight: 600;
   word-spacing: 5px;
   letter-spacing: 2px;
-  margin-left: 150px;
+  margin-left: 300px;
   background:var(--bg-color);
   background-clip: text;
   color: transparent;
@@ -449,7 +449,6 @@ body{
 }
 .aboutme-sentence .aboutme-text{
   padding-left:32%;
-  text-align:start;
 }
 .aboutme-content{
   display: flex;
@@ -485,7 +484,7 @@ body{
 }
 .about-download{
   margin-top: 40px;
-  margin-left: -320px;
+  margin-left: -120px;
 }
 .stack{
   margin-top: 40px;
@@ -494,6 +493,7 @@ body{
   color: var(--text-color);
   font-size: 2rem;
   font-weight: 700;
+  margin-left: -70px;
 }
 .stack-coloum{
   display: flex;
@@ -604,12 +604,22 @@ body{
 
  /* Adjusted for small screen tabs */
 
- @media (max-width: 1024px) {
-  .navbar {
-    margin: 0 20px;
-    margin-top: 20px;
-    width: 90%;
+ @media (max-width: 1200px) {
+  .nav-hide{
+    display: none;
   }
+  .nav-menu-icon i{
+    display: flex;
+    
+  }
+  .nav-menu-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:10%;
+    margin-top: 40%;
+  }
+  
   .intro h1 {
     margin-left: 0;
   }
@@ -622,6 +632,7 @@ body{
     position:static;
     width: 95%;
     margin: 5% auto;
+   
   }
   .talk{
     margin-bottom: 50%;
@@ -629,8 +640,7 @@ body{
     justify-content: center;
   }
   .contact-btn{
-    margin-left: 200px;
-    margin-bottom: 0;
+    display: none;
   }
   
   .project-cont{
@@ -674,82 +684,6 @@ body{
 }
 
 /* Tablets */
-@media (max-width: 768px) {
-  .nav-hide{
-    display: none;
-  }
-  .nav-menu-icon i{
-    display: flex;
-  }
-  .nav-menu-icon{
-    display: flex;
-  }
-  
-  .intro h1 {
-    margin-left: 0;
-    font-size: 2.5em;
-  }
-  .intro{
-    margin-left: 0;
-  }
-  .contact-btn{
-    margin-bottom: 340px;
-  }
-
-  .profile-box {
-    position:static;
-    width: 95%;
-  }
-  .talk{
-    margin-bottom: 50%;
-  }
-  
-  .project-cont{
-    font-size: 1.5rem;
-    margin-left: 0;
-  }
-
-  .project-card {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .aboutme-sentence {
-    font-size: 2.2em;
-    padding-left: 0;
-  }
-  .aboutme-sentence .aboutme-text {
-    padding-left: 0;
-    text-align: center; 
-  }
-  
-  .aboutme-left {
-    margin-left: 5%;
-  }
-  .about-download{
-    margin-left: 0;
-  }
-  .stack-coloum{
-    margin: 0;
-    gap: 20px;
-  }
-  .contact-fields{
-    margin-left: 0;
-  }
-  .contactme-btn{
-    margin-left: 0;
-  }
-  .contact-info{
-    margin-left: 0;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  .footer .divider{
-    margin-left: 0;
-  }
-
-}
 
 
  /* Adjusted for very small screens mobiles*/
@@ -757,16 +691,19 @@ body{
 
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .nav-hide{
     display: none;
   }
   .nav-menu-icon i{
     display: flex;
+   
   }
   .nav-menu-icon{
     display: flex;
+    margin-top: 20%;
   }
+  
   
   .heading-text, .letter {
     font-size: 1.5rem;
@@ -776,6 +713,7 @@ body{
     position:static;
     width: 95%;
     margin-top: 30px;
+    
 
   }
   .icons{

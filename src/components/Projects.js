@@ -38,9 +38,9 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <p className="heading" data-aos="fade-up" data-aos-duration="2000">~Projects~</p>
-      <div className='project-cont' data-aos="fade-up" data-aos-duration="2000">
-      <p className="project-text">Check Out My Projects</p>
+      {/* <p className="heading" data-aos="fade-up" data-aos-duration="2000">~Projects~</p> */}
+      <div className='aboutme-sentence' data-aos="fade-up" data-aos-duration="2000">
+      <p className="aboutme-text">Take a Look at My Amazing Projects</p>
 
       </div>
       <div className="project-card" data-aos="fade-up" data-aos-duration="2000">
