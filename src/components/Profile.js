@@ -18,7 +18,7 @@ const ProfileBox = () => {
       </div>
       <div className="talk">
         <Link to="contact" smooth={true} duration={500}>
-        <button className="contact-btn">Let's Work Together..!</button>
+        <button className="contact-btn"><spam>Let's Work Together..!</spam></button>
         </Link>
       </div>
     </div>

@@ -135,7 +135,12 @@ body{
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  transition: transform 0.3s ease-in;
 }
+.contact-btn:hover{
+  color: var(--bg);
+}
+
 
 /* Navgation bar styling */
 
@@ -221,8 +226,11 @@ body{
   width: auto;
   height: 28px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
-
+.contact-button:hover{
+  transform: scale(1.1);
+}
 
 /* nav bottom bar*/
 .nav-menu-icon i{
@@ -312,7 +320,7 @@ body{
 
 .cv-btn:hover {
   color: var(--text-color);
-  transition-delay: 0.5ms;
+  
 }
 
 /* project section styling */
@@ -551,6 +559,10 @@ body{
   text-align: center;
   border: none;
   margin-top: 20px;
+  transition: transform 0.8 ease;
+}
+.contactme-btn:hover{
+  transform: scale(1.1);
 }
 .footer{
   text-align: center;
@@ -837,5 +849,5 @@ body{
   
 }
 
-/* Toggle Theme */
+
 
